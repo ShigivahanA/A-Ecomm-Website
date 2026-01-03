@@ -540,9 +540,12 @@ const sendCustomDesign = async (req, res) => {
     `;
 
     // Prepare attachments for nodemailer (disk storage -> use only existing paths)
-    const attachments = files
-      .filter((f) => f && f.path)
-      .map((f) => ({ filename: f.originalname || path.basename(f.path || ""), path: f.path }));
+    const attachments = files.map((f) => ({
+  filename: sanitizeFilename(f.originalname),
+  content: f.buffer,
+  contentType: f.mimetype,
+}));
+
 
     const mailOptions = {
       from: process.env.EMAIL_USER || process.env.MAIL_FROM || "no-reply@example.com",

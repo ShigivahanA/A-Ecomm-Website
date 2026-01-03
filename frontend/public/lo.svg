@@ -1,0 +1,15 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="MAYILÉ favicon">
+  <title>MAYILÉ favicon</title>
+
+  <!-- Transparent background -->
+  <rect width="100%" height="100%" fill="transparent"></rect>
+
+  <!-- Circle outline (optional) -->
+  <circle cx="32" cy="32" r="30" fill="transparent" stroke="rgba(0,0,0,0.06)" stroke-width="1.5"></circle>
+
+  <!-- Monogram letter -->
+  <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle" font-family="Prata, 'Playfair Display', Georgia, serif" font-size="28" font-weight="400" fill="#000000">
+    M
+  </text>
+</svg>
